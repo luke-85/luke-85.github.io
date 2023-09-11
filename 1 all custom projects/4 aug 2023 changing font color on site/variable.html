@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing CSS Variable Value</title>
+    <style>
+        :root {
+            --colors: #1eff56, #ff1e1e, #ffea00, #FF5733;
+            --current-color: var(--blue);
+        }
+        h1 {
+            color: var(--current-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h1>HELLO WORLD!</h1>
+    </center>
+
+    <script>
+        const colorList = ['--blue', '--white', '--red', '--green', '--yellow'];
+        let currentIndex = 0;
+
+        function changeColor() {
+            currentIndex = (currentIndex + 1) % colorList.length;
+            const newColor = getComputedStyle(document.documentElement).getPropertyValue(`--colors`).split(', ')[currentIndex];
+            document.documentElement.style.setProperty('--current-color', newColor);
+        }
+
+        setInterval(changeColor, 300); // Change color every 300ms
+    </script>
+
+</body>
+
+</html>

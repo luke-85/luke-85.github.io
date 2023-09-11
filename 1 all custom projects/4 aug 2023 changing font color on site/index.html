@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <h2 class="logo">LULQMAN</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bedroom</a></li>
+                <li><a href="#">Dining</a></li>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Backyard</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>LUQMAN TECHNO DJ</h1>
+            <p>Subscribe to Easy Tutorials YouTube Channel to watch more
+                videos,<br> press the bell icon to get the latest updates.</p>
+            <!-- <div>
+                <button type="button"><span>WATCH MORE</span></button>
+                <button type="button"><span>SUBSCRIBE</span></button>
+            </div> -->
+        </div>
+    </div>
+</body>
+
+</html>
+
+    </div>
+
+
+
+
+    <script>
+        const colorList = ['--blue', '--white', '--red', '--green', '--yellow'];
+        let currentIndex = 0;
+
+        function changeColor() {
+            currentIndex = (currentIndex + 1) % colorList.length;
+            const newColor = getComputedStyle(document.documentElement).getPropertyValue(`--colors`).split(', ')[currentIndex];
+            document.documentElement.style.setProperty('--current-color', newColor);
+        }
+
+        setInterval(changeColor, 500); // Change color every 300ms
+    </script>
+
+</body>
+
+</html>
