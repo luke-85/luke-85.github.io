@@ -1,0 +1,39 @@
+#logok{
+    background-color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'Kufam', cursive;
+    color:rgb(99, 86, 219);
+}
+#logotech{
+  font: rgb(255, 255, 255);          
+  font-family: 'Exo 2', sans-serif;
+  font-size: 40px;
+  border: solid rgb(99, 86, 219) ;
+  border-radius: 20px;
+  background-color:rgb(101, 101, 233);
+  color: rgb(255, 255, 255);
+}
+#footlog{
+  color: white;  
+}
+#firstword{
+  color: rgb(115, 112, 119);
+  font-family: 'Secular One', sans-serif;
+
+
+}
+#secondword{
+  font-weight: bold;
+  font-family: 'Source Code Pro', monospace;
+  color: rgb(48, 1, 255);
+}
+#webdevh{
+  border-bottom: 10px solid  rgb(215, 215, 221);
+  border-left: 10px solid  rgb(215, 215, 221);
+  border-top: 10px solid rgb(179, 179, 241);
+  border-right: 10px solid  rgb(179, 179, 241);
+  font-size: 40px;
+}
+#webdev{
+  border-radius: solid red 20px;
+}
